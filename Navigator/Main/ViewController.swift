@@ -28,3 +28,17 @@ class ViewController: UIViewController {
     }
 }
 
+class SegwayViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func buttonPush(_ sender: UIButton) {
+        
+        let storyboard = UIStoryboard(name: "Push", bundle: nil)
+        let newViewController = storyboard.instantiateViewController(withIdentifier: "Push") as! PushViewController
+        self.navigationController?.pushViewController(newViewController, animated: true)
+    }
+}

@@ -58,24 +58,37 @@
             </objects>
             <point key="canvasLocation" x="1011.4503816793892" y="4.9295774647887329"/>
         </scene>
-        <!--View Controller-->
+        <!--Segway View Controller-->
         <scene sceneID="Yem-sN-yVW">
             <objects>
-                <viewController id="zBL-9g-GFC" sceneMemberID="viewController">
+                <viewController id="zBL-9g-GFC" customClass="SegwayViewController" customModule="Navigator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zUh-hq-RVh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sewayed..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZg-03-dZe">
-                                <rect key="frame" x="155" y="416" width="83" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sewayed..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZg-03-dZe">
+                                <rect key="frame" x="155" y="415.66666666666669" width="83" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIs-KB-vB1">
+                                <rect key="frame" x="142.66666666666666" y="456.66666666666669" width="108" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Push again"/>
+                                <connections>
+                                    <action selector="buttonPush2:" destination="zBL-9g-GFC" eventType="touchUpInside" id="1Ex-ZH-1jo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1br-KW-MI7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CZg-03-dZe" firstAttribute="centerY" secondItem="zUh-hq-RVh" secondAttribute="centerY" id="Ama-Xa-T7A"/>
+                            <constraint firstItem="VIs-KB-vB1" firstAttribute="centerX" secondItem="zUh-hq-RVh" secondAttribute="centerX" id="Bra-5H-4zz"/>
+                            <constraint firstItem="CZg-03-dZe" firstAttribute="centerX" secondItem="zUh-hq-RVh" secondAttribute="centerX" id="j1n-Vk-9yu"/>
+                            <constraint firstItem="VIs-KB-vB1" firstAttribute="top" secondItem="CZg-03-dZe" secondAttribute="bottom" constant="20" id="nbu-um-Kkb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fHM-dT-RkT"/>
                 </viewController>
