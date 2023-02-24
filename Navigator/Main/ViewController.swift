@@ -18,12 +18,13 @@ class ViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Push", bundle: nil)
         let newViewController = storyboard.instantiateViewController(withIdentifier: "Push") as! PushViewController
-//        self.navigationController?.pushViewController(newViewController, animated: true)
         self.navigationController?.pushViewController(newViewController, animated: true)
     }
     
-    @IBAction func buttonPresent(_ sender: Any) {
-        
+    @IBAction func buttonPresent(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Present", bundle: nil)
+        let newViewController = storyboard.instantiateViewController(withIdentifier: "Present") as! PresentViewController
+        self.present(newViewController, animated: true)
     }
     
 

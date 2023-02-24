@@ -15,6 +15,8 @@
 		AD38787B29A89D13003D17FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD38787929A89D13003D17FB /* LaunchScreen.storyboard */; };
 		AD38788329A89D77003D17FB /* Push.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD38788229A89D77003D17FB /* Push.storyboard */; };
 		AD38788529A89D87003D17FB /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38788429A89D87003D17FB /* PushViewController.swift */; };
+		AD38788A29A89FCC003D17FB /* Present.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD38788929A89FCC003D17FB /* Present.storyboard */; };
+		AD38788C29A8A022003D17FB /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38788B29A8A022003D17FB /* PresentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		AD38787C29A89D13003D17FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD38788229A89D77003D17FB /* Push.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Push.storyboard; sourceTree = "<group>"; };
 		AD38788429A89D87003D17FB /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		AD38788929A89FCC003D17FB /* Present.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Present.storyboard; sourceTree = "<group>"; };
+		AD38788B29A8A022003D17FB /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +64,43 @@
 		AD38786D29A89D11003D17FB /* Navigator */ = {
 			isa = PBXGroup;
 			children = (
+				AD38788729A89FA1003D17FB /* Main */,
+				AD38788629A89F8D003D17FB /* Push */,
+				AD38788829A89FA8003D17FB /* Present */,
 				AD38786E29A89D11003D17FB /* AppDelegate.swift */,
 				AD38787029A89D11003D17FB /* SceneDelegate.swift */,
-				AD38787229A89D11003D17FB /* ViewController.swift */,
-				AD38787429A89D11003D17FB /* Main.storyboard */,
 				AD38787729A89D13003D17FB /* Assets.xcassets */,
 				AD38787929A89D13003D17FB /* LaunchScreen.storyboard */,
 				AD38787C29A89D13003D17FB /* Info.plist */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		AD38788629A89F8D003D17FB /* Push */ = {
+			isa = PBXGroup;
+			children = (
 				AD38788229A89D77003D17FB /* Push.storyboard */,
 				AD38788429A89D87003D17FB /* PushViewController.swift */,
 			);
-			path = Navigator;
+			path = Push;
+			sourceTree = "<group>";
+		};
+		AD38788729A89FA1003D17FB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AD38787429A89D11003D17FB /* Main.storyboard */,
+				AD38787229A89D11003D17FB /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AD38788829A89FA8003D17FB /* Present */ = {
+			isa = PBXGroup;
+			children = (
+				AD38788929A89FCC003D17FB /* Present.storyboard */,
+				AD38788B29A8A022003D17FB /* PresentViewController.swift */,
+			);
+			path = Present;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +164,7 @@
 				AD38787B29A89D13003D17FB /* LaunchScreen.storyboard in Resources */,
 				AD38787829A89D13003D17FB /* Assets.xcassets in Resources */,
 				AD38788329A89D77003D17FB /* Push.storyboard in Resources */,
+				AD38788A29A89FCC003D17FB /* Present.storyboard in Resources */,
 				AD38787629A89D11003D17FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +178,7 @@
 			files = (
 				AD38787329A89D11003D17FB /* ViewController.swift in Sources */,
 				AD38786F29A89D11003D17FB /* AppDelegate.swift in Sources */,
+				AD38788C29A8A022003D17FB /* PresentViewController.swift in Sources */,
 				AD38788529A89D87003D17FB /* PushViewController.swift in Sources */,
 				AD38787129A89D11003D17FB /* SceneDelegate.swift in Sources */,
 			);
