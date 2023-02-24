@@ -26,7 +26,5 @@ class ViewController: UIViewController {
         let newViewController = storyboard.instantiateViewController(withIdentifier: "Present") as! PresentViewController
         self.present(newViewController, animated: true)
     }
-    
-
 }
 

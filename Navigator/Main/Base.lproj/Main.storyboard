@@ -32,12 +32,22 @@
                                     <action selector="buttonPresent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EQw-t9-aWV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBt-0z-7mG">
+                                <rect key="frame" x="154.66666666666666" y="518.66666666666663" width="84" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Segway"/>
+                                <connections>
+                                    <segue destination="zBL-9g-GFC" kind="show" id="8o1-Dg-oAY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="TuG-C3-cXJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EcT-hb-KLY"/>
+                            <constraint firstItem="RBt-0z-7mG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HDp-ZS-Cyt"/>
                             <constraint firstItem="TuG-C3-cXJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NFJ-57-rdS"/>
+                            <constraint firstItem="RBt-0z-7mG" firstAttribute="top" secondItem="JaE-NO-tBN" secondAttribute="bottom" constant="20" id="Wsz-oi-8jf"/>
                             <constraint firstItem="JaE-NO-tBN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jiZ-zs-mnV"/>
                             <constraint firstItem="JaE-NO-tBN" firstAttribute="top" secondItem="TuG-C3-cXJ" secondAttribute="bottom" constant="20" id="m08-N1-Kga"/>
                         </constraints>
@@ -47,6 +57,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1011.4503816793892" y="4.9295774647887329"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yem-sN-yVW">
+            <objects>
+                <viewController id="zBL-9g-GFC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zUh-hq-RVh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sewayed..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZg-03-dZe">
+                                <rect key="frame" x="155" y="416" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1br-KW-MI7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fHM-dT-RkT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBM-e9-LPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kTY-DQ-RFf">
