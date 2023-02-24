@@ -13,6 +13,8 @@
 		AD38787629A89D11003D17FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD38787429A89D11003D17FB /* Main.storyboard */; };
 		AD38787829A89D13003D17FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD38787729A89D13003D17FB /* Assets.xcassets */; };
 		AD38787B29A89D13003D17FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD38787929A89D13003D17FB /* LaunchScreen.storyboard */; };
+		AD38788329A89D77003D17FB /* Push.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD38788229A89D77003D17FB /* Push.storyboard */; };
+		AD38788529A89D87003D17FB /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38788429A89D87003D17FB /* PushViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AD38787729A89D13003D17FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD38787A29A89D13003D17FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD38787C29A89D13003D17FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD38788229A89D77003D17FB /* Push.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Push.storyboard; sourceTree = "<group>"; };
+		AD38788429A89D87003D17FB /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				AD38787729A89D13003D17FB /* Assets.xcassets */,
 				AD38787929A89D13003D17FB /* LaunchScreen.storyboard */,
 				AD38787C29A89D13003D17FB /* Info.plist */,
+				AD38788229A89D77003D17FB /* Push.storyboard */,
+				AD38788429A89D87003D17FB /* PushViewController.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			files = (
 				AD38787B29A89D13003D17FB /* LaunchScreen.storyboard in Resources */,
 				AD38787829A89D13003D17FB /* Assets.xcassets in Resources */,
+				AD38788329A89D77003D17FB /* Push.storyboard in Resources */,
 				AD38787629A89D11003D17FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				AD38787329A89D11003D17FB /* ViewController.swift in Sources */,
 				AD38786F29A89D11003D17FB /* AppDelegate.swift in Sources */,
+				AD38788529A89D87003D17FB /* PushViewController.swift in Sources */,
 				AD38787129A89D11003D17FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
